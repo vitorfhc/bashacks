@@ -41,8 +41,9 @@ safe_source() {
 install() {
 	printf "\n\n###### BASHACKS ######\n\n" >> $TARGET_FILE
 	for item in ${hack_files[@]}; do
-		echo $item
+		printf "$item "
 		safe_source "$item" >> $TARGET_FILE
+		printf "\e[32mInstalled\e[39m\n"
 	done
 	printf "######################\n" >> $TARGET_FILE
 }
