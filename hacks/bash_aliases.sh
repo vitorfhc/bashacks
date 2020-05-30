@@ -12,6 +12,8 @@ alias dcdi="docker images -f dangling=true -q | xargs -r docker rmi"
 alias dcv="docker volume ls -q | xargs -r docker volume rm -f"
 alias db="DOCKER_BUILDKIT=1 docker build"
 
+alias qdk="docker run -it --rm -w /app --net host -v $(pwd):/app"
+
 alias k="kubectl"
 alias kg="kubectl get"
 alias kgns="kubectl get --namespace"
