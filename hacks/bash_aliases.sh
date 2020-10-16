@@ -25,3 +25,6 @@ alias kex="kubectl exec"
 alias ka="kubectl apply"
 
 alias cpy="xclip -sel c"
+
+alias cmpcpp="g++ -o bin -Wall -Wshadow -Wpedantic -std=c++17 -O2"
+alias cmpc="gcc -O2 -Wall -Wshadow -lm -o bin"
