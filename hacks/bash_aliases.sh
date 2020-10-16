@@ -14,7 +14,6 @@ alias db="DOCKER_BUILDKIT=1 docker build"
 
 alias qdk="docker run -it --rm -w /app --net host -v \$(pwd):/app"
 
-alias k="kubectl"
 alias kg="kubectl get"
 alias kgns="kubectl get --namespace"
 alias kgan="kubectl get --all-namespaces"
